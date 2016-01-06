@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Socket.IO chat</title>
+</head>
+
+<body>
+    <form>
+        <div class="wrap">
+            <div class="container-fluid">
+                <h1>Node.js and Socket.io Chat Room!</h1>
+                <div id="messages"></div>
+                <div class="push"></div>
+            </div>
+        </div>
+
+        <div class="footer navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-9">
+                        <input type="text" id="message-box" placeholder="Write a message..." rows="3" class="form-control input-lg">
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <button type="submit" id="send-message-btn" class="btn btn-primary btn-lg btn-block">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </form>
+</body>
+
+</html>
